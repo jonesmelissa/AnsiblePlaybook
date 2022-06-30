@@ -10,5 +10,5 @@
     - name: Distribution major version
       debug: msg="{{ ansible_distribution_major_version }}"
     - name: Get free disk space
-      debug: msg="{{ ansible_mounts.size_available }}"
+      debug: msg="{{ ansible_mounts[1].size_available }}"
 
