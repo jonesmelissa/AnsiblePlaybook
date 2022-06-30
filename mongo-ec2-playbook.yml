@@ -1,6 +1,6 @@
 ---
 - name: mongo-ec2-playbook
-  hosts: all
+  hosts: mjtest-mongodb
   tasks:
     - name: Check OS Version
       shell: cat /etc/os-release
