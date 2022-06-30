@@ -1,6 +1,6 @@
 ---
 - name: mongo-ec2-playbook
-  hosts: shared-mongo-testing-01
+  hosts: mongo_instances
   gather_facts: yes
   tasks:
     - name: Distribution
