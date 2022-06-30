@@ -2,7 +2,9 @@
 - name: mongo-ec2-playbook
   hosts: mjtest-mongodb
   gather_facts: yes
-  become: false
+  become: true
+  become_method: sudo
+  become_user: ubuntu
   tasks:
     - name: Check OS Version
       shell: cat /etc/os-release
